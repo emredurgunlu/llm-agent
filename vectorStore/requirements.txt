@@ -1,0 +1,13 @@
+langchain
+langchain-community
+langchain-core
+langchain-openai
+langchain-text-splitters
+openai
+python-dotenv
+langchain_chroma
+# the packages below are for third (3-ragMiddle.py) and next files 
+bs4
+faiss-cpu
+tqdm
+tiktoken
