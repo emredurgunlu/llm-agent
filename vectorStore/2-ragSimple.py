@@ -7,6 +7,7 @@ from langchain_core.runnables import RunnableLambda
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.runnables import RunnablePassthrough
 import os
+from langchain_openai import ChatOpenAI
 
 load_dotenv()
 
@@ -50,7 +51,7 @@ retriever = RunnableLambda(vectorstore.similarity_search).bind(k=1)  # select to
 
 #print(retriever.batch(["cat", "shark"]))
 
-from langchain_openai import ChatOpenAI
+
 
 llm = ChatOpenAI(
     model="openrouter/free",
