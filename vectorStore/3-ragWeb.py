@@ -58,4 +58,5 @@ rag_chain = (
 
 
 if __name__ == "__main__":
-    for chunk in rag_chain.stream("what is maximum inner product search?")
+    for chunk in rag_chain.stream("what is maximum inner product search?"):
+        print(chunk, end="", flush=True) # stream kullanınca flush=True kullanılır.
